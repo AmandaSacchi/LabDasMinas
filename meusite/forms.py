@@ -9,9 +9,9 @@ class CandidatoForm(forms.ModelForm):
         'nome',
         'idade',
         'genero',
-        'dt_nascimento',
+        'data_nascimento',
         'nacionalidade',
-        'jatrabalha',
+        'ja_trabalha',
         'pretencao_salarial',
         'perfil',
         'foto'
