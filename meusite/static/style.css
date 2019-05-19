@@ -96,6 +96,7 @@ header p {
 .temas_titulo{
     justify-content: center;
     align-items: center;
+    
 }
 
 .oficinas{
@@ -402,7 +403,7 @@ footer {
 
 .img_header{
     height:100%;
-    background-image: url(imagens/header.png);
+    background-image: url(static\imagens\header.png);
     background-size: cover;
 }
 

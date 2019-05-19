@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from meusite.forms import CandidatoForm
 from meusite.models import Candidato
+from meusite.forms import CandidatoForm
+
 
 # Create your views here.
 #Views: requisicao 
@@ -20,10 +21,9 @@ def cadastrados(request):
     }
     return render(request, 'cadastrados.html', contexto)
 
-# Create your views here.
-def fazer_cadastro(request):
-    #ENTRAR PELA PRIMEIRA VEZ NO SITE USA METODO REQUEST.GET
+ #ENTRAR PELA PRIMEIRA VEZ NO SITE USA METODO REQUEST.GET
     #ENTRA PELO CLICK ENVIANDO O FORMULARIO USA O METODO REQUEST.POST)  
+def fazer_cadastro(request):
     candidatos = Candidato.objects.all()
     formulario = CandidatoForm(request.POST or None)
     msg = ''
