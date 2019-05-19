@@ -11,9 +11,9 @@ body {
     'footer footer footer';
     grid-template-rows: 80vh /*header*/
     60vh /*sobre*/
-    60vh /*temas*/
+    70vh /*temas*/
     90vh /*oficinas*/
-    40vh /*equipe*/
+    50vh /*equipe*/
     15vh /*footer*/;
     font-size: 18px;
 }
@@ -26,16 +26,16 @@ ul{
 h2{
     color:white;
     overflow-wrap: break-word;
-    font-size: 55px;
-    margin: 0px;
+    font-size: 35pt;
+    margin: 5px;
 }
 
 h3{
-    font-size: 40px;
+    font-size: 22pt;
 }
 
 h4{
-    color:purple;
+    color: #8A084B;
     font-family: 'Roboto', sans-serif;
     font-size:50px;
 }
@@ -147,7 +147,6 @@ footer {
 }
 
 .div_tema{
-    width: 90%;
     height: 90%;
     background-color: white;
     display:flex;
@@ -254,10 +253,26 @@ footer {
     color: black;
 }
 
+.arte{
+    width: 90%;
+}
 
 .aparecerPopUp{
     transform: translateX(5vw);
     transition: 8s;
+}
+
+.pop_up{
+    background-color: black;
+    color: white;
+    width:300px;
+    height:50px;
+}
+
+.artes{
+    width: 500px;
+    transform: translateX(-50vw);
+    margin-top: 50px;
 }
 
 .menu_hamburguer{
@@ -348,6 +363,9 @@ footer {
     align-items: center;
     align-content: center;
 }
+.membros h2{
+    margin-top: 2vh;
+}
 
 .foto_membros{
     display:flex;
@@ -403,8 +421,8 @@ footer {
 }
 
 #img_complemento {
-    width:15%;
-    margin-top:40px;
+    width:90%;
+    margin-top:30px;
 }
 
 #conteudo{
