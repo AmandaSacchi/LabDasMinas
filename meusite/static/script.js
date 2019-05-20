@@ -18,14 +18,14 @@ let menuX = document.querySelector(".menu_X");
 
 
 let listaFront=[
-    /* 0 */{url:'../static/imagens/front/1.png', tag: "Texto do Site 1"},
-    /* 1 */{url:'../static/imagens/front/2.png', tag: "Texto do Site 2"},
-    /* 2 */{url:'../static/imagens/front/3.png', tag: "Texto do Site 3"}
+    /* 0 */{url:"imagens/front/1.png", tag: "Texto do Site 1"},
+    /* 1 */{url:'imagens/front/2.png', tag: "Texto do Site 2"},
+    /* 2 */{url:'imagens/front/3.png', tag: "Texto do Site 3"}
 ]
 
 let listaDesign=[
-    /* 0 */{url:'../static/imagens/design/1.png', tag: "Descrição Arte 1"},
-    /* 1 */{url:'../static/imagens/design/2.png', tag: "Descrição Arte 2"},
+    /* 0 */{url:'imagens/design/1.png', tag: "Descrição Arte 1"},
+    /* 1 */{url:'imagens/design/2.png', tag: "Descrição Arte 2"},
     /* 2 */{url:'../static/imagens/design/3.png', tag: "Descrição Arte 3"}
 ]
 
