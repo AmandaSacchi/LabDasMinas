@@ -2,8 +2,14 @@
 
 {% load staticfiles %}
 
-{% block content %}
+{% block head %}
+
 <link rel="stylesheet" href="{% static 'style.css' %}">
+<script defer src="{% static 'script.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
 
 <header>
     <div class="img_header">

@@ -2,8 +2,14 @@
 
 {% load staticfiles %}
 
-{% block content %}
+{% block head %}
+
 <link rel="stylesheet" href="{% static 'style_adicionais.css' %}">
+<script defer src="{% static 'script.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
 <div class="divisao">
     <!--~~~~~~~~~~COLOCA O FORMULARIO NO HTML~~~~~~~~~~~-->
     <!--metodos http://-->
@@ -11,13 +17,18 @@
             <!-- EVITA TIPO DE ATAQUE DE SEGURANÇA (que explora a confiança do navegador de um det site, falsifica solicitação entre sites-->
             {% csrf_token %}
             {{ form }} <!--CONTEXTO DO FORMULARIO-->
-            
             <!-- TUDO QUE É DO CONTEXTO VEM ASSIM chavechavecoisa do contexto}}-->
             <!-- {% (template tag) funções do python -->
-            <button type='submit'>Cadastrar-se</button>
-            {% if msg %}
-            <h2>{{ msg }}</h2>
-            {% endif %}
+            <button type="submit" name="button">Cadastrar-se</button>
         </form>
+         {% if msg %} 
+        <!-- <h2>{{ msg }}</h2> -->
+        {{ msg }}
+        <form action="." method="post">{% csrf_token %}
+        <!-- {% endif %} -->
+        </form>
+            
+        
+
 </div>
 {% endblock %}

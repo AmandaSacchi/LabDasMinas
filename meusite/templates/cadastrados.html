@@ -2,8 +2,16 @@
 
 {% load staticfiles %}
 
-{% block content %}
+{% block head %}
+
 <link rel="stylesheet" href="{% static 'style_adicionais.css' %}">
+<script defer src="{% static 'script.js' %}"></script>
+
+{% endblock %}
+
+<!-- ---------------------------fim do head------------------------------------------------------- -->
+
+{% block content %}
 <div class="divisao">
     <div>
         {% for cadastrado in cadastrados %}
