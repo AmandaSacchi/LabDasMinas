@@ -11,3 +11,5 @@ myenv/
 .mypy_cache/
 
 db.sqlite3
+
+*.py[cod]

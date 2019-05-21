@@ -13,19 +13,13 @@
 <div class="divisao">
     <!--~~~~~~~~~~COLOCA O FORMULARIO NO HTML~~~~~~~~~~~-->
     <!--metodos http://-->
-        <form method='POST'>
-            <!-- EVITA TIPO DE ATAQUE DE SEGURANÇA (que explora a confiança do navegador de um det site, falsifica solicitação entre sites-->
+    <form method='POST'>
             {% csrf_token %}
-            {{ form }} <!--CONTEXTO DO FORMULARIO-->
-            <!-- TUDO QUE É DO CONTEXTO VEM ASSIM chavechavecoisa do contexto}}-->
-            <!-- {% (template tag) funções do python -->
-            <button type="submit" name="button">Cadastrar-se</button>
-        </form>
-         {% if msg %} 
-        <!-- <h2>{{ msg }}</h2> -->
-        {{ msg }}
-        <form action="." method="post">{% csrf_token %}
-        <!-- {% endif %} -->
+            {{ form }}
+            <button type='submit'>Cadastrar</button>
+            {% if msg %}
+                <h2>{{ msg }}</h2>
+            {% endif %}
         </form>
             
         

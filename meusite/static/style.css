@@ -9,13 +9,13 @@ body {
     'oficinas oficinas oficinas'
     'equipe equipe equipe'
     'footer footer footer';
-    grid-template-rows: 80vh /*header*/
-    60vh /*sobre*/
+    grid-template-rows: 70vh /*header*/
+    70vh /*sobre*/
     70vh /*temas*/
     90vh /*oficinas*/
     50vh /*equipe*/
     15vh /*footer*/;
-    font-size: 18px;
+    font-size: 14.5pt;
 }
 
 ul{
@@ -44,7 +44,7 @@ h5{
     color:white;
     overflow-wrap: break-word;
     font-size: 105px;
-    margin: 0px;
+    margin: 15%;
 }
 
 h6{
@@ -117,12 +117,11 @@ footer {
 }
 
 .cabecalho {
-    width: 80%;
-    height: 70%;
+    height: 35vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 15%;
 }
 
 
@@ -259,17 +258,7 @@ footer {
     width: 90%;
 }
 
-.aparecerPopUp{
-    transform: translateX(5vw);
-    transition: 8s;
-}
 
-.pop_up{
-    background-color: black;
-    color: white;
-    width:300px;
-    height:50px;
-}
 
 .artes{
     width: 500px;
@@ -283,27 +272,30 @@ footer {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    margin: 1vw;
+    /* align-items: flex-end; */
 }
 
 .traco{
     width: 100px;
     height: 10%;
     background-color: white;
-    color:white;
-    margin: 10px;
+    color:transparent;
+    margin-bottom: 3vh;
 }
 
 .sumir_menu_hamburguer{
     display: none;
-    transition: 10s;
+    transition: 5s;
 }
 
 .menu_X{
-    margin-top:-40px;
+    margin-bottom: 40px;
     width:200px;
     height: 200px;
     display: none;
+    
 }
 
 .X{
@@ -311,6 +303,7 @@ footer {
     height: 200px;
     margin: 10px;
     color: white;
+    margin-left: 5vw;
 }
 
 .menu_X img{
@@ -326,18 +319,15 @@ footer {
 .menu_navegacao{
     display:block;
     justify-content:center;
+    align-items: center;
     margin:8px;
     width: 100%;
     background-color:none;
     opacity:0.0;
-    margin-top: 550px;
-    margin-left: -460px;
-    transition:10s;
-}
-
-.menu_navegacao a{
-    color: black;
-    text-decoration: none;
+    /* margin-left: -460px; */
+    margin-left: 10%;
+    margin-top: 20vh;
+    
 }
 
 .aparecerMenuNavegacao{
@@ -345,16 +335,24 @@ footer {
     background-color: none;
     display:block;
     transition: 5s;
-    margin-top: 350px;
-    margin-left: -460px;
+    margin-bottom: 2vh;
+    /* margin-left: -460px; */
 }
 
-.links {
-    margin:8px;
+ header a{
+    margin:4vw;
     width: 30px;
     height: 50px;
-    background-color: white;
-    color: black;
+    color:rgba(255, 255, 255, 0.712);
+    text-decoration: none;
+    font-size: 20pt;
+    
+}
+header a:hover{
+    font-size: 28pt;
+    color: white;
+    border: 40%;
+    border-color: #8A084B;
 }
 
 .membros {
@@ -404,14 +402,15 @@ footer {
 .simbolo_header{   
     margin-top:50px;
     padding:15px;
-    margin:20;
-    width:40%;
+    margin:none;
+    width:15vw;
 }
 
 .img_header{
     height:100%;
     background-image: url(imagens/header.png);
     background-size: cover;
+    z-index: 1000;
 }
 
 .img_front {

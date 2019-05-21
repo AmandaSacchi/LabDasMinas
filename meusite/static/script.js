@@ -2,9 +2,9 @@
 
 BÔNUS: Fazer com que o menu hamburguer ao clicar abre os links e transforma os tracinhos em X, e ao fechar o menu volta ao estado normal com os 3 tracinhos*/
 
+
 let i = 0;
 let botaoProx = document.querySelector(".proximo");
-let botao = document.querySelector(".aparecerPopUp");
 let popup = document.querySelector(".artes");
 let imgFront = document.querySelector(".img_front");
 let imgArte = document.querySelector(".arte");
@@ -23,11 +23,6 @@ let listaFront=[
     /* 2 */{url:"{% static 'imagens/front/3.png' %}", tag: "Texto do Site 3"}
 ]
 
-let listaDesign=[
-    /* 0 */{url:"{% static 'imagens/design/1.png' %}", tag: "Descrição Arte 1"},
-    /* 1 */{url:"{% static 'imagens/design/2.png' %}", tag: "Descrição Arte 2"},
-    /* 2 */{url:"{% static 'imagens/design/3.png' %}", tag: "Descrição Arte 3"}
-]
 
 function frontIterativo(){
     imgFront.src = listaFront[i].url;
@@ -39,15 +34,6 @@ function frontIterativo(){
 botaoProx.onclick = frontIterativo;
 corpo.classList.add("botaoFront");/*adicionar/remover classes existentes no CSS*/
 
-function designIterativo(){
-    imgArte.src = listaDesign[i].url;
-    descricaoArte.innerHTML = listaDesign[i].tag;
-    i++;
-    if (i==listaDesign.length) i=0;
-    popup.classList.toggle("aparecerPopUp");
-}
-
-botao.onclick = designIterativo;
 
 function abrirMenuHamburguer(){
     menuNav.classList.toggle("aparecerMenuNavegacao");

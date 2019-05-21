@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from meusite.models import Candidato
 from meusite.forms import CandidatoForm
+# from django.http import HttpResponse
 
 
 # Create your views here.
