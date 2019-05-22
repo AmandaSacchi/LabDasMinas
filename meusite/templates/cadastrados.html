@@ -4,22 +4,28 @@
 
 {% block head %}
 
-<link rel="stylesheet" href="{% static 'style_adicionais.css' %}">
+<link rel="stylesheet" href="{% static 'style_cadastrados.css' %}">
 <script defer src="{% static 'script.js' %}"></script>
+<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
 
 {% endblock %}
 
 <!-- ---------------------------fim do head------------------------------------------------------- -->
 
 {% block content %}
-<div class="divisao">
-    <div>
+
+    <div class="blocos">  
         {% for cadastrado in cadastrados %}
-        <img src="{{ cadastrado.foto.url }}" alt="img_perfil">
+        <div class="divisao">
         <h2>{{ cadastrado.nome }}</h2>
-        <p>{{ cadastrado.idade }}</p>
+        <h4>{{ cadastrado.idade }}</h4>
+        <h4>{{ cadastrado.pretencao_salarial }}</h4>
+        <p>{{ cadastrado.conhecimentos }}</p>
+        </div>
         {% endfor %}
     </div>
-</div>
-   
+    <div class="botoes">
+    <a href="http://localhost:8000/">HOME</a>
+    <a href="http://localhost:8000/cadastro">CADASTRE-SE</a>
+    </div>
 {% endblock %}

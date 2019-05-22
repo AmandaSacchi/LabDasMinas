@@ -1,0 +1,44 @@
+body{
+    height:100%;
+    background-image: url(imagens/header3.png);
+    background-size: cover;
+}
+
+.divisao{
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:1vh;
+    font-family: 'Righteous', cursive;
+    border: 5px solid rgba(255, 255, 255, 0.849);
+    border-radius: 1%;
+
+}
+
+.blocos{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+.botoes{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-end;
+}
+a{
+    font-family: 'Righteous', cursive;
+    font-size: 20pt;
+    color: white;
+    text-decoration: none;
+    padding-left: 3vw;
+}
+
+a:hover{
+    font-size: 23pt;
+    color: white;
+    text-decoration: underline;
+}

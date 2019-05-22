@@ -4,8 +4,9 @@
 
 {% block head %}
 
-<link rel="stylesheet" href="{% static 'style_adicionais.css' %}">
+<link rel="stylesheet" href="{% static 'style_cadastro.css' %}">
 <script defer src="{% static 'script.js' %}"></script>
+<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
 
 {% endblock %}
 
@@ -13,16 +14,22 @@
 <div class="divisao">
     <!--~~~~~~~~~~COLOCA O FORMULARIO NO HTML~~~~~~~~~~~-->
     <!--metodos http://-->
+    <h1>Venha fazer parte do nosso time!<br> Cadastre-se para aparecer no nosso banco de dados<br></h1>
+    <h3>Esse cadastro irá gerar uma ficha sua em nosso sistema e ficará visivel na aba MINAS CADASTRADAS, onde empresas poderão ver sua ficha e entrar em contato</h3>
+    
     <form method='POST'>
             {% csrf_token %}
-            {{ form }}
-            <button type='submit'>Cadastrar</button>
-            {% if msg %}
+            {{ form}}
+            <button type='submit' >CADASTRAR</button>
+            {% if form %}
                 <h2>{{ msg }}</h2>
             {% endif %}
         </form>
-            
-        
 
 </div>
+<div>
+    <a class="b" href="http://localhost:8000/">HOME</a>
+    <a class="b" href="http://localhost:8000/cadastrados">MINAS CADASTRADAS</a>
+</div>
+
 {% endblock %}

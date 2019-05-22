@@ -5,11 +5,8 @@ BÔNUS: Fazer com que o menu hamburguer ao clicar abre os links e transforma os 
 
 let i = 0;
 let botaoProx = document.querySelector(".proximo");
-let popup = document.querySelector(".artes");
 let imgFront = document.querySelector(".img_front");
-let imgArte = document.querySelector(".arte");
 let descricaoImgFront = document.querySelector(".texto_portfolio");
-let descricaoArte = document.querySelector(".texto_arte");
 let corpo = document.querySelector("body");
 let menuHamburguer = document.querySelector(".menu_hamburguer");
 let menuNav = document.querySelector(".menu_navegacao");
@@ -18,10 +15,11 @@ let menuX = document.querySelector(".menu_X");
 
 
 let listaFront=[
-    /* 0 */{url:"{% static 'imagens/front/1.png' %}", tag: "Texto do Site 1"},
-    /* 1 */{url:"{% static 'imagens/front/2.png' %}", tag: "Texto do Site 2"},
-    /* 2 */{url:"{% static 'imagens/front/3.png' %}", tag: "Texto do Site 3"}
+   /* 0 */{url:'../static/imagens/front/1.png', tag: "Oficina de Circuitos Texteis"},
+    /* 1 */{url:'../static/imagens/front/2.png', tag: "Oficinas de Arduino"},
+    /* 2 */{url:'../static/imagens/front/3.png', tag: "Circuitos sensíveis a luz e toque"}
 ]
+
 
 
 function frontIterativo(){

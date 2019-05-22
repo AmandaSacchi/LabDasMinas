@@ -12,7 +12,8 @@ class CandidatoForm(forms.ModelForm):
             'nacionalidade',
             'ja_trabalha',
             'pretencao_salarial',
-            'perfil',
-            'foto'
+            'conhecimentos',
+            'educacao',
+            'perfil'
         ]
 

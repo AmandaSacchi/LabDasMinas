@@ -1,0 +1,54 @@
+body{
+    background-image: url(imagens/header3.png);
+    background-size: cover;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-family: 'Righteous', cursive;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #000000c2;
+    font-size: 15pt;
+
+}
+h3{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+h1{
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+button{
+    font-family: 'Righteous', cursive;
+    font-size: 12pt;
+    height: 5vh;
+    width: 10vw;
+
+}
+
+a{
+    font-family: 'Righteous', cursive;
+    font-size: 20pt;
+    color: white;
+    text-decoration: none;
+    padding-top: 1vh;
+    padding-left: 2vw;
+}
+
+.b:hover{
+    font-size: 23pt;
+    color: white;
+    text-decoration: underline;
+}
+
+h2{
+    color: yellow;
+}
