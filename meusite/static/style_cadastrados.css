@@ -2,6 +2,7 @@ body{
     height:100%;
     background-image: url(imagens/header3.png);
     background-size: cover;
+    display: flex;
 }
 
 .divisao{
@@ -22,6 +23,8 @@ body{
     display: flex;
     flex-direction: row;
     margin: 5%;
+    height: 350px;
+    width: 280px;
 }
 .botoes{
     display: flex;
@@ -41,4 +44,8 @@ a:hover{
     font-size: 23pt;
     color: white;
     text-decoration: underline;
+}
+p{
+    padding-left: 10%;
+    padding-right: 10%;
 }
