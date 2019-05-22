@@ -3,6 +3,7 @@ body{
     background-image: url(imagens/header3.png);
     background-size: cover;
     display: flex;
+    flex-direction: column;
 }
 
 .divisao{
@@ -16,6 +17,7 @@ body{
     font-family: 'Righteous', cursive;
     border: 5px solid rgba(255, 255, 255, 0.849);
     border-radius: 1%;
+    width: 250px;
 
 }
 
@@ -24,7 +26,7 @@ body{
     flex-direction: row;
     margin: 5%;
     height: 350px;
-    width: 280px;
+    width: 90vw;
 }
 .botoes{
     display: flex;
@@ -38,6 +40,7 @@ a{
     color: white;
     text-decoration: none;
     padding-left: 3vw;
+    
 }
 
 a:hover{
